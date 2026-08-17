@@ -1,0 +1,270 @@
+/* =========================================================
+   Microsoft Authenticator Tutorial
+   CSS spécifique à ce tutoriel
+   ========================================================= */
+
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
+
+.authenticator-page .tuto-image {
+    display: block;
+    width: auto;
+    max-width: 500px;
+    max-height: 650px;
+    height: auto;
+
+    margin: 25px auto;
+
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+
+    object-fit: contain;
+}
+
+
+/* Images larges */
+
+.authenticator-page .tuto-image-wide {
+    display: block;
+    width: auto;
+    max-width: 700px;
+    max-height: 650px;
+    height: auto;
+
+    margin: 25px auto;
+
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+
+    object-fit: contain;
+}
+
+
+/* Capture "Ajouter un compte"
+   Format vertical : légèrement plus petite */
+
+.authenticator-page .tuto-image-account {
+    display: block;
+    width: auto;
+    max-width: 430px;
+    max-height: 650px;
+    height: auto;
+
+    margin: 25px auto;
+
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   BLOCS D'INSTRUCTIONS
+   ========================================================= */
+
+.authenticator-page .info-box {
+    background: #f8f9fa;
+
+    border: 1px solid #e1e5e9;
+    border-left: 3px solid #c7cdd4;
+
+    border-radius: 7px;
+
+    padding: 17px 20px;
+    margin: 20px 0;
+}
+
+
+/* Titre des blocs ordinateur / smartphone */
+
+.authenticator-page .info-box > strong {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #263238;
+
+    margin-bottom: 12px;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   ICONES ORDINATEUR / SMARTPHONE
+   ========================================================= */
+
+.authenticator-page .info-box .fa-desktop,
+.authenticator-page .info-box .fa-mobile-screen-button,
+.authenticator-page .info-box .fa-mobile-screen {
+    color: #0078d4;
+}
+
+
+/* =========================================================
+   LISTES
+   ========================================================= */
+
+.authenticator-page .info-box ol,
+.authenticator-page .info-box ul {
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding-left: 24px;
+}
+
+.authenticator-page .info-box li {
+    margin-bottom: 8px;
+    line-height: 1.55;
+}
+
+.authenticator-page .info-box li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   WARNING
+   ========================================================= */
+
+.authenticator-page .warning-box {
+    background: #fff9e6;
+
+    border: 1px solid #f3d58a;
+    border-left: 4px solid #f59e0b;
+
+    border-radius: 7px;
+
+    padding: 17px 20px;
+    margin: 20px 0;
+}
+
+.authenticator-page .warning-box > strong {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #6b4f00;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   SUCCESS
+   ========================================================= */
+
+.authenticator-page .success-box {
+    background: #edf7ed;
+
+    border: 1px solid #b8dfb8;
+    border-left: 4px solid #107c10;
+
+    border-radius: 7px;
+
+    padding: 17px 20px;
+    margin: 20px 0;
+}
+
+.authenticator-page .success-box > strong {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #146b14;
+
+    margin-bottom: 10px;
+}
+
+/* =========================================================
+   TEXTE
+   ========================================================= */
+
+.authenticator-page .section p {
+    color: #243447;
+    line-height: 1.65;
+}
+
+.authenticator-page .section strong {
+    color: #172b4d;
+}
+
+
+/* =========================================================
+   TITRES DES ETAPES
+   ========================================================= */
+
+.authenticator-page .section h2 {
+    color: #0078d4;
+
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   ESPACEMENT
+   ========================================================= */
+
+.authenticator-page .section > :last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .authenticator-page .tuto-image,
+    .authenticator-page .tuto-image-wide,
+    .authenticator-page .tuto-image-account {
+        width: auto;
+        max-width: 100%;
+        max-height: 600px;
+        height: auto;
+    }
+
+    .authenticator-page .section {
+        padding: 22px 18px;
+    }
+
+    .authenticator-page .section h2 {
+        font-size: 19px;
+    }
+
+    .authenticator-page .info-box,
+    .authenticator-page .warning-box,
+    .authenticator-page .success-box {
+        padding: 15px;
+    }
+}
+
+/* =========================================================
+   LIEN MICROSOFT
+   Correction de visibilité du texte
+   ========================================================= */
+
+.authenticator-page .link-content a,
+.authenticator-page .link-content a strong {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+.authenticator-page .link-content a:hover,
+.authenticator-page .link-content a:hover strong {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
